@@ -1,0 +1,31 @@
+{
+    "name": "bnf/slim-typo3-testapp",
+    "type": "typo3-cms-extension",
+    "description": "Slim TYPO3 example App",
+    "keywords": [
+        "TYPO3",
+        "extension"
+    ],
+    "authors": [
+        {
+            "name": "Benjamin Franzke",
+            "email": "benjaminfranzke@gmail.com",
+            "role": "Developer",
+            "homepage": "https://bnfr.net"
+        }
+    ],
+    "license": "GPL-2.0+",
+    "require": {
+        "typo3/cms-core": "^8.7",
+        "bnf/slim-typo3": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bnf\\SlimTypo3Testapp\\": "Classes"
+        }
+    },
+    "replace": {
+        "slim_typo3_testapp": "self.version",
+        "typo3-ter/slim_typo3_testapp": "self.version"
+    }
+}
